@@ -120,5 +120,5 @@ After a minute or so, refreshing the page will now show your contract address as
 
 ## Contributors
 
-Daniel Chrostowski - Set up the repository
-Joshua Gottlieb - Provided guidance
+- Daniel Chrostowski - Set up the repository
+- Joshua Gottlieb - Provided guidance
