@@ -6,9 +6,9 @@ https://docs.chain.link/vrf/v2-5/getting-started
 
 ## Dependencies
 
-[NodeJS](https://nodejs.org/en)
-[Github Desktop (more user friendly GUI)](https://desktop.github.com/) or [Git SCM (used in the command line)](https://www.git-scm.com/downloads)
-[Visual Studio Code (optional)](https://code.visualstudio.com/)
+- [NodeJS](https://nodejs.org/en)
+- [Github Desktop (more user friendly GUI)](https://desktop.github.com/) or [Git SCM (used in the command line)](https://www.git-scm.com/downloads)
+- [Visual Studio Code (optional)](https://code.visualstudio.com/)
 
 ## Clone The Repository
 
