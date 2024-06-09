@@ -14,13 +14,13 @@ https://docs.chain.link/vrf/v2-5/getting-started
 
 ### Using Github Desktop
 
-![Github Desktop Cloning](github-desktop-cloning.png)
+![Github Desktop Cloning](images/github-desktop-cloning.png)
 
 ### Using Git SCM
 
 1. Open a terminal window or Git Bash depending on how you set it up
 2. Navigate to your preferred directory using a combination of "cd" (change directory), "mkdir" (make directory), "dir" (shows directory files), "ls" (shows directory files).
-3. Run `git clone ...`.
+3. Run `git clone https://github.com/NycNode/Solidity-Getting-Started-With-Chainlink-VRF.git`.
 
 ## Setting Up A MetaMask Wallet
 
@@ -50,73 +50,73 @@ Local Terminal Inside The Cloned Project Directory
 
 Go Back To Your Browser
 
-![Remix Instructions](remix-one.png)
+![Remix Instructions](images/remix-one.png)
 
 6. Open the contract file in Remix (you should be able to see the Solidity code for the VRFNumberGen.sol file)
 
-![Contract Opened](remix-two.png)
+![Contract Opened](images/remix-two.png)
 
 7. Make sure to compile the contract, you should have a green check mark like on step 3. in the picture below once done.
 
-![Compiling Contract](remix-three.png)
+![Compiling Contract](images/remix-three.png)
 
 8. Connect your MetaMask to Remix
 
 First make sure your MetaMask wallet is on the Polygon Amoy network. We added the Amoy network in step 2 so please refer back to that if you're not seeing "Polygon Amoy Testnet" in your list of networks.
 
-![Switching Networks](remix-five.png)
+![Switching Networks](images/remix-five.png)
 
 Then, connect your MetaMask wallet to Remix using the next picture as guidance.
 
-![Connecting MetaMask](remix-four.png)
+![Connecting MetaMask](images/remix-four.png)
 
 9. In order to use Chainlink's VRF service, we will have to create a subscription (no real money involved, just using test LINK and MATIC). Head over to the following link, and after entering your wallet address (can be obtained from MetaMask) paste it in as the "Admin address".
 
-![Public Address](remix-six.png)
+![Public Address](images/remix-six.png)
 
 [Link To Subscribe](https://vrf.chain.link/polygon-amoy/new)
 
-![Subscribing](remix-seven.png)
+![Subscribing](images/remix-seven.png)
 
 10. Continuing next steps, once you've created the subscription head to the subscription and click on it.
 
 [Place To View Your Subscriptions](https://vrf.chain.link/polygon-amoy)
 
-![My Subscriptions](remix-eight.png)
+![My Subscriptions](images/remix-eight.png)
 
 11. Copy the subscription "ID" (it'll be used when we deploy the contract). Then click "Actions" and "Fund Subscription".
 
-![ID and Funding](remix-nine.png)
+![ID and Funding](images/remix-nine.png)
 
 12. Earlier, one of our faucets gave us 25 LINK tokens but it might be less at your current point in time. However, funding with 5 LINK tokens should be more than enough.
 
-![Funding Subscription](remix-ten.png)
+![Funding Subscription](images/remix-ten.png)
 
 13. Go back to Remix and deploy the contract by first inputting your subscription ID that you copied earlier as a parameter. Then, MetaMask will prompt you to confirm the transaction.
 
-![Deploying](remix-eleven.png)
+![Deploying](images/remix-eleven.png)
 
 14. At this point, once the transaction is confirmed, you'll see a message like so with a green check mark in Remix's terminal. If you scroll down further on the left side of the navigation bar that you used to deploy, you should see your newly deployed contract's functions as well as it's address. Copy that address and navigate back to your VRF subscriptions (same place as in the picture for step 11).
 
-![Transaction Confirmed & Getting Contract Address](remix-twelve.png)
+![Transaction Confirmed & Getting Contract Address](images/remix-twelve.png)
 
 [Place To View Your Subscriptions](https://vrf.chain.link/polygon-amoy)
 
 15. Click "Add Consumer" and paste in your contract address that we previously obtained from Remix's IDE. Now hit the next "Add Consumer" button and that will allow your contract to use your subscription. Make sure to confirm the transaction as well when prompted by MetaMask to do so.
 
-![Adding A Consumer](remix-thirteen.png)
+![Adding A Consumer](images/remix-thirteen.png)
 
 After a minute or so, refreshing the page will now show your contract address as one of the consumers for your subscription.
 
-![Viewing Your Newly Added Consumer](remix-fourteen.png)
+![Viewing Your Newly Added Consumer](images/remix-fourteen.png)
 
 16. Go back to Remix and call the requestRandomNumber function, and confirm the MetaMask transaction thereafter.
 
-![Calling The VRF](remix-fifteen.png)
+![Calling The VRF](images/remix-fifteen.png)
 
 17. After 3 block confirmation or a minute/two, take your MetaMask wallet address again (same way as in the first picture of step 9) and paste it in as the first parameter for the addressToRandomNumber function. The second parameter will be 0 or 1, each representing a separate die. Call the function to display the value underneath as an unsigned integer with 256 bits.
 
-![Reading The State](remix-sixteen.png)
+![Reading The State](images/remix-sixteen.png)
 
 ## Contributors
 
