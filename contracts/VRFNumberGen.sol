@@ -4,7 +4,7 @@ pragma solidity 0.8.19;
 import {VRFConsumerBaseV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/VRFConsumerBaseV2Plus.sol";
 import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
 
-contract VRFD20 is VRFConsumerBaseV2Plus {
+contract VRFNumberGen is VRFConsumerBaseV2Plus {
     uint256 private constant RAND_NUM_GEN_IN_PROGRESS = 42;
     uint256 s_subscriptionId;
     address vrfCoordinator = 0x343300b5d84D444B2ADc9116FEF1bED02BE49Cf2;
