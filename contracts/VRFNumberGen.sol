@@ -7,9 +7,9 @@ import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/V
 contract VRFNumberGen is VRFConsumerBaseV2Plus {
     uint256 private constant RAND_NUM_GEN_IN_PROGRESS = 42;
     uint256 s_subscriptionId;
-    address vrfCoordinator = 0x343300b5d84D444B2ADc9116FEF1bED02BE49Cf2;
+    address vrfCoordinator = 0x343300b5d84D444B2ADc9116FEF1bED02BE49Cf2; // Polygon Amoy testnet VRF coordinator address
     bytes32 s_keyHash =
-        0x816bedba8a50b294e5cbd47842baf240c2385f2eaf719edbd4f250a137a8c899;
+        0x816bedba8a50b294e5cbd47842baf240c2385f2eaf719edbd4f250a137a8c899; // Polygon Amoy testnet key hash
     uint32 callbackGasLimit = 80000;
     uint16 requestConfirmations = 3;
     uint32 numWords = 2;
